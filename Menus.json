@@ -1,0 +1,43 @@
+[
+  {
+    "icon": "pi pi-home",
+    "ariaLabel": "home",
+    "href": "/"
+  },
+  {
+    "label": "Journals",
+    "href": "/journals"
+  },
+  {
+    "label": "Editorial Policies",
+    "href": "/"
+  },
+  {
+    "label": "Author Information",
+    "href": "/"
+  },
+  {
+    "label": "Peer Review Guidelines",
+    "href": "/"
+  },
+  {
+    "label": "Collections",
+    "href": "/"
+  },
+  {
+    "label": "Hot Topics",
+    "href": "/"
+  },
+  {
+    "label": "Latest Articles",
+    "href": "/"
+  },
+  {
+    "label": "Videos",
+    "href": "/"
+  },
+  {
+    "label": "Podcasts",
+    "href": "/"
+  }
+]

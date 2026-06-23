@@ -1,0 +1,24 @@
+// Static values — safe to use in SCSS operations (math, string interpolation, etc.)
+$color-primary: var(--color-primary);
+$color-accent: var(--color-accent);
+$color-background: #0a0a0a;
+$color-foreground: #ededed;
+
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 2rem;
+
+// Tailwind v4 exposes design tokens as CSS custom properties via @theme.
+// Use var(--color-*), var(--spacing-*), var(--font-*) etc. directly in your
+// SCSS rules — they resolve at runtime and work everywhere CSS vars are valid.
+// Example:
+//   color: var(--color-blue-500);
+//   padding: var(--spacing-4);
+//   font-family: var(--font-sans);
+
+// Breakpoints — match Tailwind v4 defaults
+$breakpoint-sm: 40rem;
+$breakpoint-md: 48rem;
+$breakpoint-lg: 64rem;
+$breakpoint-xl: 80rem;
+$breakpoint-2xl: 96rem;

@@ -1,0 +1,147 @@
+@import "tailwindcss";
+@source "../libs/tailwindConstants/*.ts";
+@import "primeicons/primeicons.css";
+@import "primereact/resources/themes/lara-light-cyan/theme.css";
+
+/* 
+sm	40rem (640px)	@media (width >= 40rem) { ... }
+md	48rem (768px)	@media (width >= 48rem) { ... }
+lg	64rem (1024px)	@media (width >= 64rem) { ... }
+xl	80rem (1280px)	@media (width >= 80rem) { ... }
+2xl	96rem (1536px)	@media (width >= 96rem) { ... } 
+*/
+
+:root {
+  --font-family: var(--font-cormorant), Georgia, "Times New Roman", Times, serif;
+
+  --primary: #12a4e2;
+  --primaryLink: #083f56;
+  --secondary: #6a1b9a;
+  --tertiary: #FF9D14;
+  --accent: #e8f7fe;
+  --error: #FD5353;
+  --warning: #FFC260;
+  --success: #068852;
+  --info: #9013FE;
+  --errorDark: #973131;
+  --warningDark: #624c28;
+  --successDark: #03482b;
+  --infoDark: #410873;
+  --sticks: #909083;
+  --disabled: #b9bdc5;
+  --font: #1e1e16;
+  --overlay: #1d1d11;
+  --overlayAccent: #2f2f22;
+  --overlayHighlight: #474639;
+  --overlayBackground: #faf9f1;
+  --overlayBackgroundHighlight: #ffffff;
+  --initBackground: #faf9f1;
+  --cardBackground: white;
+  --cardForeground: #171717;
+
+  --dialogBackgroundMask: #3b3b2310;
+  
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-secondary: var(--secondary);
+  --color-primaryLink: var(--primaryLink);
+  --color-disabled: var(--disabled);
+  --color-overlay: var(--overlay);
+  --color-overlayAccent: var(--overlayAccent);
+  --color-overlayHighlight: var(--overlayHighlight);
+  --color-font: var(--font);
+  --color-overlayBackground: var(--overlayBackground);
+  --color-overlayBackgroundHighlight: var(--overlayBackgroundHighlight);
+  --color-sticks: var(--sticks);
+
+  --color-error: var(--error);
+  --color-errorDark: var(--errorDark);
+  --color-warning: var(--warning);
+  --color-warningDark: var(--warningDark);
+  --color-success: var(--success);
+  --color-successDark: var(--successDark);
+  --color-info: var(--info);
+  --color-infoDark: var(--infoDark);
+
+  --color-dialogBackgroundMask: var(--dialogBackgroundMask);
+  --color-cardBackground: var(--cardBackground);
+
+  --color-initBackground: var(--initBackground);
+  --color-cardForeground: var(--cardForeground);
+  --color-primary: var(--primary);
+  --color-accent: #e8f7fe;
+  
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-cormorant: var(--font-cormorant);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    font-family: var(--font-cormorant), Georgia, "Times New Roman", Times, serif;
+    color: var(--overlayHighlight) !important;
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--font);
+  font-family: var(--font-family);
+}
+
+.mdxeditor.mdxeditor {
+  --font-body: var(--font-family);
+}
+
+.mdxeditor-toolbar {
+  z-index: 80;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  background-color: transparent !important;
+}
+
+h1 {
+  font-size: 8rem !important;
+  font-weight: 900;
+  line-height: 105pt;
+  max-width: 680px !important;
+}
+
+h2 {
+  font-size: 1.5rem !important;
+}
+
+h3 {
+  font-size: 1.25rem !important;
+}
+
+h4 {
+  font-size: 1.125rem !important;
+}
+
+p {
+  font-size: 1.25rem !important;
+}
+
+/* 
+48rem (768px)	@media (width >= 48rem) { ... }
+lg	64rem (1024px)	@media (width >= 64rem) { ... } */
+
+@media (width >= 48rem) and (width < 64rem) { 
+  h1 {
+    font-size: 6rem !important;
+    max-width: 480px !important;
+  }   
+  h2 {
+    font-size: 1.25rem !important;
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  // make Format Document trigger eslint fixes
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  // run eslint fixes on save (including semi removal via `semi: ["error","never"]`)
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  // optional: also run on explicit "Format Document"
+  "editor.codeActionsOnSaveMode": "all",
+  "eslint.format.enable": true,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  "tailwindCSS.experimental.configFile": "app/globals.css",
+  "tailwindCSS.includeLanguages": {
+    "typescriptreact": "javascript",
+    "javascriptreact": "javascript"
+  },
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "js/ts.tsdk.path": "node_modules/typescript/lib"
+}
